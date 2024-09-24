@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar } from "./Components/Navbar";
 import { Hero } from "./Components/Hero";
 import Services from "./Components/Services";
+import { WhyUs } from "./Components/WhyUs";
 
 function page() {
   return (
@@ -9,6 +10,7 @@ function page() {
       <Navbar />
       <Hero />
       <Services />
+      <WhyUs />
     </div>
   );
 }
