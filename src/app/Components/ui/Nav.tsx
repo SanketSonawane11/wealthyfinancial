@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -22,12 +22,16 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current - scrollYProgress.getPrevious()!;
+      setVisible(direction < 0 || current <= 20);
     }
   });
 
@@ -36,10 +40,10 @@ export const FloatingNav = ({
       <motion.div
         initial={{
           opacity: 1,
-          y: -100,
+          y: 0, // Navbar starts visible on load
         }}
         animate={{
-          y: visible ? 0 : -100,
+          y: visible ? 0 : -100, // Toggle based on visibility state
           opacity: visible ? 1 : 0,
         }}
         transition={{
@@ -51,9 +55,9 @@ export const FloatingNav = ({
         )}
       >
         <div className="flex w-full text-black items-center justify-between">
-          <img src="/Logo.jpg" />
+          <img src="/Logo.jpg" alt="Logo" />
           <div className="flex relative left-[3rem] text-black text-[1rem] items-center font-bold justify-center gap-8">
-            {navItems.map((navItem: any, idx: number) => (
+            {navItems.map((navItem, idx: number) => (
               <Link
                 key={`link=${idx}`}
                 href={navItem.link}
@@ -70,7 +74,7 @@ export const FloatingNav = ({
           </div>
           <div className="hidden md:flex text-[1.1rem] items-center justify-center gap-5">
             <button className="rounded-lg py-2 px-3 font-semibold text-white bg-[#ceb361] transition-all ease-out duration-150 hover:rounded-sm">
-              Start Your Jourey
+              Start Your Journey
             </button>
           </div>
           <div className="text-[2rem] md:hidden">
