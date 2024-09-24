@@ -59,13 +59,21 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         shimmer: {
           from: {
-            "backgroundPosition": "0 0"
+            backgroundPosition: "0 0",
           },
           to: {
-            "backgroundPosition": "-200% 0"
-          }
+            backgroundPosition: "-200% 0",
+          },
         },
         move: {
           "0%": { transform: "translateX(-200px)" },
@@ -81,6 +89,8 @@ const config = {
         },
       },
       animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         shimmer: "shimmer 2s linear infinite",
         move: "move 5s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",

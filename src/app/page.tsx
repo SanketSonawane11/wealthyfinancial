@@ -3,6 +3,8 @@ import { Navbar } from "./Components/Navbar";
 import { Hero } from "./Components/Hero";
 import Services from "./Components/Services";
 import { WhyUs } from "./Components/WhyUs";
+import Footer from "./Components/Footer";
+import { Reviews } from "./Components/Reviews";
 
 function page() {
   return (
@@ -11,6 +13,8 @@ function page() {
       <Hero />
       <Services />
       <WhyUs />
+      <Reviews />
+      <Footer />
     </div>
   );
 }
