@@ -53,13 +53,13 @@ export const FloatingNav = ({
       >
         <div className="flex w-full text-black items-center justify-between">
           <img src="/Logo.jpg" />
-          <div className="flex text-black text-[0.9rem] items-center font-bold justify-center gap-8">
+          <div className="flex relative left-[3rem] text-black text-[1rem] items-center font-bold justify-center gap-8">
             {navItems.map((navItem: any, idx: number) => (
               <Link
                 key={`link=${idx}`}
                 href={navItem.link}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative dark:text-neutral-50 transition-all ease-out duration-150 items-center flex space-x-1 dark:hover:text-blue-300 hover:scale-105 hover:text-blue-500"
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
@@ -69,12 +69,9 @@ export const FloatingNav = ({
               </Link>
             ))}
           </div>
-          <div className="hidden md:flex text-[1rem] items-center justify-center gap-5">
-            <button className="rounded-lg border-2 bg-[#7f56d90e] border-[#7f56d981] py-2 px-3 font-semibold text-[#7F56D9]">
-              Login
-            </button>
-            <button className="rounded-lg py-2 px-3 font-semibold text-white bg-[#7F56D9]">
-              Sign up
+          <div className="hidden md:flex text-[1.1rem] items-center justify-center gap-5">
+            <button className="rounded-lg py-2 px-3 font-semibold text-white bg-[#ceb361] transition-all ease-out duration-150 hover:rounded-sm">
+              Start Your Jourey
             </button>
           </div>
           <div className="text-[2rem] md:hidden">

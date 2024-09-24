@@ -12,7 +12,7 @@ export function Hero() {
   ];
   return (
     <ImagesSlider
-      className="h-[40rem] mt-[4rem] md:mt-[5rem] w-[98%] rounded-xl border-2"
+      className="h-[42rem] md:h-[40rem] mt-[4rem] md:mt-[5.2rem] w-[98%] rounded-xl"
       images={images}
     >
       <motion.div
@@ -29,12 +29,19 @@ export function Hero() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          The hero section slideshow <br /> nobody asked for
+        <motion.p className="font-bold flex items-center justify-center flex-col text-[2rem] md:text-6xl text-center py-4">
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-400">
+            Unlock Your Financial Potential <br /> with Expert Wealth
+            Management.
+          </h1>
+          <h3 className="text-blue-200 my-[1rem] w-[60%] text-[1rem] md:text-[1.5rem]">
+            Offering Professional Portfolio Management, Forex Strategies, Fund
+            Handling, and Mutual Fund Expertise.
+          </h3>
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Join now →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        <button className="px-4 py-2 backdrop-blur-sm border bg-yellow-300/10 border-yellow-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <span>Get Started Today →</span>
+          <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-yellow-500 to-transparent" />
         </button>
       </motion.div>
     </ImagesSlider>
