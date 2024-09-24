@@ -1,27 +1,29 @@
 import { cn } from "@/lib/utils";
+import React, { HTMLAttributes } from "react";
 
-interface MarqueeProps {
+// Define the props interface
+interface MarqueeProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
   reverse?: boolean;
   pauseOnHover?: boolean;
-  children?: React.ReactNode;
+  children: React.ReactNode; // This should not be optional as children are usually required
   vertical?: boolean;
   repeat?: number;
-  [key: string]: any;
 }
 
+// Fixed Marquee component
 export default function Marquee({
   className,
-  reverse,
-  pauseOnHover = false,
+  reverse = false, // Default value set to false for reverse
+  pauseOnHover = false, // Default value remains false
   children,
-  vertical = false,
-  repeat = 4,
+  vertical = false, // Default value remains false
+  repeat = 4, // Default value remains 4
   ...props
 }: MarqueeProps) {
   return (
     <div
-      {...props}
+      {...props} // Spread any additional HTML attributes on the container div
       className={cn(
         "group flex items-center justify-center overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
         {
