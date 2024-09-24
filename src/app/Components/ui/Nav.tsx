@@ -9,7 +9,6 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa6";
 
 export const FloatingNav = ({
   navItems,

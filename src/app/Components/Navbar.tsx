@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./ui/Nav";
-import { link } from "fs";
 export function Navbar() {
   const navItems = [
     {
