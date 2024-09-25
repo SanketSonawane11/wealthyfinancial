@@ -5,10 +5,10 @@ import { ImagesSlider } from "./ui/Images-slider";
 
 export function Hero() {
   const images = [
-    "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.unsplash.com/photo-1718778449026-fc05939d7650?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEZpbmFuY2lpYWwlMjBhZHZpc29yfGVufDB8fDB8fHww",
-    "https://plus.unsplash.com/premium_photo-1661537628051-216fea94e4c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW52ZXN0bWVudCUyMGZpcm18ZW58MHx8MHx8fDA%3D",
-    "https://images.pexels.com/photos/5834218/pexels-photo-5834218.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg",
+    "/images/jakub-zerdzicki-QZw8l2xO5xw-unsplash.jpg",
+    "/images/jakub-zerdzicki-QZw8l2xO5xw-unsplash.jpg",
+    "/images/pexels-photo-5834218.jpeg",
   ];
   return (
     <ImagesSlider
