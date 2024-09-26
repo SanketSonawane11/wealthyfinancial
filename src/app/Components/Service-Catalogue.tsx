@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "./ui/Sticky-scroll";
-import Image from "next/image";
 import { ServiceImage } from "./ServiceImages";
 
 const content = [

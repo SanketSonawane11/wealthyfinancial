@@ -11,12 +11,12 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: React.ReactNode | string;
-    content?: React.ReactNode | any;
+    content?: React.ReactNode;    
   }[];
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
     // target: ref
@@ -82,7 +82,7 @@ export const StickyScroll = ({
               >
                 {item.title}
               </motion.h2>
-              <motion.p
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -92,7 +92,7 @@ export const StickyScroll = ({
                 className="text-kg text-[#2e2e2e] max-w-sm mt-10"
               >
                 {item.description}
-              </motion.p>
+              </motion.div>
             </div>
           ))}
           <div className="h-40" />

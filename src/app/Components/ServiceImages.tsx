@@ -1,8 +1,3 @@
-"use client";
-import { useRef, useState } from "react";
-import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "./ui/Direction-aware";
 
 export function ServiceImage({
