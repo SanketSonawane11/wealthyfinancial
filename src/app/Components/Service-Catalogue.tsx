@@ -130,13 +130,13 @@ const content = [
       <div>
         <div className="hidden lg:flex justify-center flex-col">
           <p>
-            We're continuously working on new services to offer our clients.
+            We&apos;re continuously working on new services to offer our clients.
             Stay tuned as we enhance our offerings to better serve your needs.
           </p>
         </div>
         <div className="lg:hidden h-full w-full flex items-center justify-center">
           <p className="text-[2rem] flex text-center items-center justify-center flex-col gap-2">
-            We're adding more services soon! <MdAutoAwesome />
+            We&apos;re adding more services soon! <MdAutoAwesome />
           </p>
         </div>
       </div>
@@ -144,7 +144,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <p className="text-[2rem] flex text-center items-center justify-center flex-col gap-2">
-          We're adding more services soon! <MdAutoAwesome />
+          We&apos;re adding more services soon! <MdAutoAwesome />
         </p>
       </div>
     ),
