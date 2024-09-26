@@ -11,7 +11,7 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: React.ReactNode | string;
-    content?: React.ReactNode;    
+    content?: React.ReactNode;
   }[];
   contentClassName?: string;
 }) => {
@@ -64,7 +64,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] w-full md:border-4 rounded-2xl overflow-y-auto flex justify-between relative space-x-10 md:px-[5rem]"
+      className="h-[30rem] w-full md:border-4 border-[#ffdf80] rounded-2xl overflow-y-auto flex md:justify-center justify-between relative space-x-10 lg:px-[5rem]"
       ref={ref}
     >
       <div className="div relative flex items-start">
@@ -78,7 +78,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-[#1a1a1a] rounded-2xl bg-blue-200 px-[1rem] py-[0.5rem]"
+                className="text-2xl font-bold text-[#1a1a1a] rounded-2xl bg-[#ffdf80] px-[1rem] py-[0.5rem]"
               >
                 {item.title}
               </motion.h2>
@@ -101,7 +101,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-[24rem] w-[30%] rounded-2xl sticky top-10 overflow-hidden",
+          "hidden lg:block md:h-[20rem] md:w-[10%] lg:h-[23rem] lg:w-[30%] rounded-2xl sticky top-10 overflow-hidden",
           contentClassName
         )}
       >

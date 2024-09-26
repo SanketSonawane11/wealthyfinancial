@@ -17,7 +17,7 @@ const content = [
           investments are performing at their best.
         </p>
         <button
-          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
+          className="inline-flex h-10 animate-shimmer items-center justify-center rounded-xl border border-blue-300 bg-[linear-gradient(110deg,#2F74FFFF,60%,#8BB2FFFF,75%,#2F74FFFF)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
           onClick={() => (window.location.href = "/contact")}
         >
           Contact Us
@@ -45,7 +45,7 @@ const content = [
           growth.
         </p>
         <button
-          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
+          className="inline-flex h-10 animate-shimmer items-center justify-center rounded-xl border border-blue-300 bg-[linear-gradient(110deg,#2F74FFFF,60%,#8BB2FFFF,75%,#2F74FFFF)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
           onClick={() => (window.location.href = "/contact")}
         >
           Contact Us
@@ -55,7 +55,7 @@ const content = [
     content: (
       <div className="h-full w-full flex flex-col items-center justify-center space-y-4">
         <ServiceImage
-          image="/path/to/forex-image.jpg"
+          image="/images/flat-design-frugality-illustration/8628022.jpg"
           title="Expert Management of Forex Portfolios"
         />
       </div>
@@ -72,7 +72,7 @@ const content = [
           assured that your investments are in safe hands.
         </p>
         <button
-          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
+          className="inline-flex h-10 animate-shimmer items-center justify-center rounded-xl border border-blue-300 bg-[linear-gradient(110deg,#2F74FFFF,60%,#8BB2FFFF,75%,#2F74FFFF)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
           onClick={() => (window.location.href = "/contact")}
         >
           Contact Us
@@ -82,7 +82,7 @@ const content = [
     content: (
       <div className="h-full w-full flex flex-col items-center justify-center space-y-4">
         <ServiceImage
-          image="/path/to/fund-handling-image.jpg"
+          image="/images/saving-money-concept-background/2317669.jpg"
           title="Comprehensive Fund Handling"
         />
       </div>
@@ -100,7 +100,7 @@ const content = [
           long-term success.
         </p>
         <button
-          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
+          className="inline-flex h-10 animate-shimmer items-center justify-center rounded-xl border border-blue-300 bg-[linear-gradient(110deg,#2F74FFFF,60%,#8BB2FFFF,75%,#2F74FFFF)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-4"
           onClick={() => (window.location.href = "/contact")}
         >
           Contact Us
@@ -110,7 +110,7 @@ const content = [
     content: (
       <div className="h-full w-full flex flex-col items-center justify-center space-y-4">
         <ServiceImage
-          image="/path/to/mutual-funds-image.jpg"
+          image="/images/indian-rupee-money-bag/509020-PI3106-79-removebg.png"
           title="Mutual Fund Services"
         />
       </div>
