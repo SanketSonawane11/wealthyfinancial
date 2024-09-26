@@ -64,24 +64,26 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] w-full md:border-4 border-[#ffdf80] rounded-2xl overflow-y-auto flex md:justify-center justify-between relative space-x-10 lg:px-[5rem]"
+      className="h-[33rem] md:h-[30rem] w-full md:border-4 border-blue-100 rounded-2xl overflow-y-auto flex md:justify-center justify-between relative space-x-10 lg:px-[5rem] px-[1rem] md:px-[3rem]"
       ref={ref}
     >
       <div className="div relative flex items-start">
         <div className="w-full">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
-              <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-2xl font-bold text-[#1a1a1a] rounded-2xl bg-[#ffdf80] px-[1rem] py-[0.5rem]"
-              >
-                {item.title}
-              </motion.h2>
+              <div className="w-full flex items-center justify-center flex-col">
+                <motion.h2
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="text-2xl text-center w-fit font-bold text-[#1a1a1a] rounded-lg bg-blue-200 px-[1rem] py-[0.5rem]"
+                >
+                  {item.title}
+                </motion.h2>
+              </div>
               <motion.div
                 initial={{
                   opacity: 0,
@@ -89,7 +91,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-[#2e2e2e] max-w-sm mt-10"
+                className="text-lg text-[#2e2e2e] lg:max-w-sm w-sm mt-10"
               >
                 {item.description}
               </motion.div>
