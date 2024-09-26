@@ -40,10 +40,10 @@ export const FloatingNav = ({
       <motion.div
         initial={{
           opacity: 1,
-          y: 0, // Navbar starts visible on load
+          y: 0,
         }}
         animate={{
-          y: visible ? 0 : -100, // Toggle based on visibility state
+          y: visible ? 0 : -100,
           opacity: visible ? 1 : 0,
         }}
         transition={{
@@ -73,7 +73,7 @@ export const FloatingNav = ({
             ))}
           </div>
           <div className="hidden md:flex text-[1.1rem] items-center justify-center gap-5">
-            <button className="rounded-lg py-2 px-3 font-semibold text-white bg-[#ceb361] transition-all ease-out duration-150 hover:rounded-sm">
+            <button className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm">
               Start Your Journey
             </button>
           </div>

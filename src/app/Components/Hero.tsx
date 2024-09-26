@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "./ui/Images-slider";
+import Link from "next/link";
 
 export function Hero() {
   const images = [
@@ -44,9 +45,11 @@ export function Hero() {
             <span>Get Started Today →</span>
             <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-yellow-500 to-transparent" />
           </button>
-          <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-            View Services
-          </button>
+          <Link href="/Services">
+            <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+              View Services
+            </button>
+          </Link>
         </div>
       </motion.div>
     </ImagesSlider>

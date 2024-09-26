@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
@@ -12,33 +13,36 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="/" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="/"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link
+                  href="/About"
                   className="hover:text-blue-500 transition-colors"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/services"
+                <Link
+                  href="/Services"
                   className="hover:text-blue-500 transition-colors"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  href="/Contact"
                   className="hover:text-blue-500 transition-colors"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
