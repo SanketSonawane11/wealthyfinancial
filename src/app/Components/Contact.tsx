@@ -76,6 +76,7 @@ const ContactForm = () => {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -97,6 +98,7 @@ const ContactForm = () => {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -119,6 +121,7 @@ const ContactForm = () => {
             <div className="relative mt-2.5">
               <div className="absolute inset-y-0 left-0 flex items-center"></div>
               <input
+                required
                 type="tel"
                 name="phone-number"
                 id="phone-number"
@@ -138,6 +141,7 @@ const ContactForm = () => {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="email"
                 name="email"
                 value={email}
@@ -159,6 +163,7 @@ const ContactForm = () => {
             </label>
             <div className="mt-2.5">
               <textarea
+                required
                 name="message"
                 id="message"
                 value={message}
