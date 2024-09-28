@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "./ui/Images-slider";
+import Link from "next/link";
 // import Link from "next/link";
 
 export function Hero() {
@@ -42,10 +43,12 @@ export function Hero() {
           </h3>
         </motion.p>
         <div className="flex items-center justify-center gap-[1rem] md:gap-[3rem] flex-col md:flex-row">
-          <button className="px-4 py-2 backdrop-blur-lg border bg-yellow-300/10 border-yellow-500/20 text-white mx-auto text-center rounded-full relative">
-            <span>Get Started Today →</span>
-            <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-yellow-500 to-transparent" />
-          </button>
+          <Link href="#ContactForm">
+            <button className="px-4 py-2 backdrop-blur-lg border bg-yellow-300/10 border-yellow-500/20 text-white mx-auto text-center rounded-full relative">
+              <span>Get Started Today →</span>
+              <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-yellow-500 to-transparent" />
+            </button>
+          </Link>
         </div>
       </motion.div>
     </ImagesSlider>
