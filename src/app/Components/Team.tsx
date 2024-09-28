@@ -1,10 +1,13 @@
 "use client";
 import React from "react";
+import { SiGmail } from "react-icons/si";
+import { Heading } from "./BlurHeading";
 
 interface SocialLinks {
-  facebook: string;
-  twitter: string;
-  linkedin: string;
+  Email?: string;
+  facebook?: string;
+  twitter?: string;
+  linkedin?: string;
 }
 
 interface TeamMember {
@@ -16,36 +19,37 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Ankit Raut",
+    role: "Founder",
     image: "path/to/image1.jpg",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
+      Email: "ankit@wealthyfinancial.in",
     },
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Nitin Sarode",
+    role: "Operation Head & Trader",
     image: "path/to/image2.jpg",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
+      Email: "",
     },
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Akshat Jain",
+    role: "Portfolio Manager & Business Acquisition",
     image: "path/to/image2.jpg",
     socialLinks: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
+      Email: "",
     },
   },
-  // Add more team members here
+  {
+    name: "Bhargav Patil",
+    role: "Portfolio Manager & Business Acquisition",
+    image: "path/to/image2.jpg",
+    socialLinks: {
+      Email: "",
+    },
+  },
 ];
 
 interface TeamMemberCardProps {
@@ -54,22 +58,18 @@ interface TeamMemberCardProps {
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => (
   <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 transition-transform duration-200 hover:shadow-lg hover:scale-105">
-    <img
+    {/* <img
       className="w-full h-32 rounded-lg object-cover mb-4"
       src={member.image}
       alt={`${member.name}`}
-    />
+    /> */}
     <h5 className="text-xl font-bold text-gray-900">{member.name}</h5>
     <p className="text-gray-500">{member.role}</p>
     <div className="flex space-x-3 mt-4">
       {Object.entries(member.socialLinks).map(([platform, link]) => (
-        <a key={platform} href={link} target="_blank" rel="noopener noreferrer">
-          <img
-            className="w-6 h-6"
-            src={`path/to/${platform}.png`}
-            alt={`${platform} icon`}
-          />
-        </a>
+        <p key={platform} className="flex items-center font-semibold gap-3">
+          <SiGmail /> {link}
+        </p>
       ))}
     </div>
   </div>
@@ -77,9 +77,12 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => (
 
 const OurTeam: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section id="Team" className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
+        <Heading className="text-center" heading="Our Team" />
+        <p className="font-light text-center mb-[3rem] text-gray-500 sm:text-xl dark:text-gray-400">
+          Meet our team
+        </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member) => (
             <TeamMemberCard key={member.name} member={member} />

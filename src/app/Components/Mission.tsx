@@ -1,11 +1,12 @@
 import React from "react";
+import { Heading } from "./BlurHeading";
 
 const BusinessSection = () => {
   const features = [
     {
       title: "Integrity",
       description:
-        "We uphold the highest standards of integrity in all of our actions.",
+        "We believe in doing what is right for our clients, providing honest and transparent advice.",
       icon: (
         <svg
           className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -18,9 +19,9 @@ const BusinessSection = () => {
       ),
     },
     {
-      title: "Collaboration",
+      title: "Client-Centric Approach",
       description:
-        "We believe in the power of teamwork and collaboration to achieve our goals.",
+        "Your needs come first. We are here to listen, advise, and offer personalized solutions.",
       icon: (
         <svg
           className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -35,7 +36,22 @@ const BusinessSection = () => {
     {
       title: "Innovation",
       description:
-        "We embrace change and strive for continuous improvement and innovation.",
+        "We use cutting-edge tools and strategies to stay ahead in the financial markets.",
+      icon: (
+        <svg
+          className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M10 2L8.293 8.293 2 10l6.293 1.707L10 18l2.293-6.293L18 10l-6.293-1.707z" />
+        </svg>
+      ),
+    },
+    {
+      title: "Accountability",
+      description:
+        "We are committed to the long-term success of our clients and take responsibility for the results we deliver.",
       icon: (
         <svg
           className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -50,22 +66,7 @@ const BusinessSection = () => {
     {
       title: "Excellence",
       description:
-        "We pursue excellence in everything we do, striving for the highest quality.",
-      icon: (
-        <svg
-          className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M10 2L8.293 8.293 2 10l6.293 1.707L10 18l2.293-6.293L18 10l-6.293-1.707z" />
-        </svg>
-      ),
-    },
-    {
-      title: "Respect",
-      description:
-        "We treat everyone with respect and value diversity in our workforce.",
+        "We strive for excellence in everything we do, from the solutions we offer to the services we deliver.",
       icon: (
         <svg
           className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -78,8 +79,9 @@ const BusinessSection = () => {
       ),
     },
     {
-      title: "Accountability",
-      description: "We take responsibility for our actions and their outcomes.",
+      title: "Adaptability",
+      description:
+        "We stay ahead by embracing change, learning from new trends, and evolving to meet our clients' dynamic needs.",
       icon: (
         <svg
           className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -107,19 +109,16 @@ const BusinessSection = () => {
     },
   ];
 
-  // In your UI component, you can render coreValues similarly to features
-
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section id="Values" className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          {/* <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             OUR CORE VALUES{" "}
-          </h2>
+          </h2> */}
+          <Heading heading="Our Core Values" />
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Here at Landwind, we prioritize sectors where technology,
-            innovation, and investment can create sustainable value and foster
-            economic development.
+            Empowering You to Achieve Financial Freedom
           </p>
         </div>
         <div className="space-y-8 lg:grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">

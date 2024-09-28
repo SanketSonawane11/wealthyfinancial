@@ -6,27 +6,29 @@ const ToolsAndIdeasSection = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
-          className="w-full dark:hidden"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-          alt="dashboard image"
-        />
-        <img
-          className="w-full hidden dark:block"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+          className="w-full rounded-xl"
+          // src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+          src="/images/joshua-mayo-MCIm2A6hLXs-unsplash.jpg"
           alt="dashboard image"
         />
         <div className="mt-4 md:mt-0">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Let&apos;s create more tools and ideas that brings us together.
+            Ready to Work with Us?
           </h2>
           <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-            Flowbite helps you connect with friends and communities of people
-            who share your interests. Connecting with your friends and family as
-            well as discovering new ones is easy with features like Groups.
+            At <span className="font-semibold">Wealthy Financial Services</span>
+            , we’re more than just financial advisors—we’re your partners in
+            achieving lasting financial success. Whether you’re looking to
+            optimize your portfolio, explore new investment opportunities, or
+            simply get expert advice, our team is here to help you every step of
+            the way. <br />
+            <br />
+            Get in touch today to discover how we can help you take control of
+            your financial future.
           </p>
           <a
             href="#"
-            className="inline-flex bg-cyan-600 items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+            className="inline-flex bg-yellow-600 transition-all ease-out duration-150 hover:rounded-xl items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
           >
             Get started
             <svg

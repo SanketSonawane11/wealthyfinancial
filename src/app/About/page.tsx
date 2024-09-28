@@ -53,14 +53,14 @@ const timelineData = [
 
 export default function Page() {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <div className="my-20 ">
         <div className="mb-10 w-full">
           <AboutHero />
         </div>
         <BusinessSection />
-        <Timeline data={timelineData} />
+        {/* <Timeline data={timelineData} /> */}
         <OurTeam />
         <ToolsAndIdeasSection />
       </div>

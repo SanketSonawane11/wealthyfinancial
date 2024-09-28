@@ -1,14 +1,16 @@
 "use client";
 
+import { Heading } from "./BlurHeading";
+
 const links = [
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Our values", href: "#Values" },
+  { name: "Meet our Team", href: "#Team" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "Offices", value: "2" },
+  { name: "Funds managed", value: "10Cr +" },
+  { name: "Managing funds", value: "4 Years" },
+  { name: "Clients", value: "200+" },
 ];
 
 export default function AboutHero() {
@@ -45,9 +47,7 @@ export default function AboutHero() {
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-blue-900 sm:text-6xl">
-              Work with us <span className="text-blue-500">.</span>
-            </h2>
+            <Heading className="text-blue-900" heading="Wo we are." />
             <p className="mt-6 text-lg leading-8 text-blue-800">
               Your Trusted Partner in Wealth Management and Financial Growth
             </p>
