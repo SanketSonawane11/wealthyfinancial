@@ -101,6 +101,13 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Wealthy Financial Services. All
             rights reserved.
           </p>
+          <a
+            className="transition-all ease-in-out duration-150 hover:text-blue-500"
+            href="https://sankets-profile.netlify.app/"
+            target="_blank"
+          >
+            Make your website
+          </a>
         </div>
       </div>
     </footer>

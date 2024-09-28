@@ -1,15 +1,44 @@
 "use client";
 import React, { useState } from "react";
-
+import emailjs from "@emailjs/browser";
+import { tr } from "framer-motion/client";
+import Loader from "./Loader";
 const ContactForm = () => {
   const [agreed, setAgreed] = useState(false);
-
-  const handleToggle = () => {
-    setAgreed(!agreed);
+  const [first, setfirst] = useState("");
+  const [second, setSecond] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setmessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .send(
+        "service_1u19ni8",
+        "template_n1e1ejf",
+        {
+          from_name: `${first} ${second}`,
+          message: message,
+        },
+        {
+          publicKey: "aYjV08S7J0xxGQbM_",
+        }
+      )
+      .then(() => {
+        alert("form Submitted");
+        setfirst("");
+        setSecond("");
+        setEmail("");
+        setmessage("");
+        setIsLoading(false);
+      });
   };
 
+  if (isLoading) return <Loader />;
+
   return (
-    <div id="Contact" className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 relative">
+    <div className="isolate w-full rounded-xl bg-white px-6 py-24 sm:py-32 lg:px-8 relative">
       {/* Background Decoration */}
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -32,11 +61,7 @@ const ContactForm = () => {
       </div>
 
       {/* Form Section */}
-      <form
-        action="https://fabform.io/f/xxxxx"
-        method="post"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
-      >
+      <form className="mx-auto mt-16 max-w-xl sm:mt-20" onSubmit={sendEmail}>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           {/* First Name */}
           <div>
@@ -52,6 +77,8 @@ const ContactForm = () => {
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
+                value={first}
+                onChange={(e) => setfirst(e.target.value)}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -70,26 +97,29 @@ const ContactForm = () => {
                 type="text"
                 name="last-name"
                 id="last-name"
+                value={second}
+                onChange={(e) => setSecond(e.target.value)}
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
 
-          {/* Company */}
+          {/* Phone Number */}
           <div className="sm:col-span-2">
             <label
-              htmlFor="company"
+              htmlFor="phone-number"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Company
+              Phone number
             </label>
-            <div className="mt-2.5">
+            <div className="relative mt-2.5">
+              <div className="absolute inset-y-0 left-0 flex items-center"></div>
               <input
-                type="text"
-                name="company"
-                id="company"
-                autoComplete="organization"
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -107,54 +137,11 @@ const ContactForm = () => {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 id="email"
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-
-          {/* Phone Number */}
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="phone-number"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Phone number
-            </label>
-            <div className="relative mt-2.5">
-              <div className="absolute inset-y-0 left-0 flex items-center">
-                <label htmlFor="country" className="sr-only">
-                  Country
-                </label>
-                <select
-                  id="country"
-                  name="country"
-                  className="h-full rounded-md border-0 bg-transparent py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-                >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
-                </select>
-                <svg
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <input
-                type="tel"
-                name="phone-number"
-                id="phone-number"
-                autoComplete="tel"
-                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -171,44 +158,12 @@ const ContactForm = () => {
               <textarea
                 name="message"
                 id="message"
+                value={message}
+                onChange={(e) => setmessage(e.target.value)}
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
-          </div>
-
-          {/* Agree to Policies */}
-          <div className="flex gap-x-4 sm:col-span-2">
-            <div className="flex h-6 items-center">
-              <button
-                type="button"
-                className={`flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset transition-colors duration-200 ease-in-out ${
-                  agreed ? "bg-indigo-600" : "bg-gray-200"
-                }`}
-                role="switch"
-                aria-checked={agreed}
-                aria-labelledby="switch-1-label"
-                onClick={handleToggle}
-              >
-                <span className="sr-only">Agree to policies</span>
-                <span
-                  aria-hidden="true"
-                  className={`h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 transition duration-200 ease-in-out ${
-                    agreed ? "translate-x-3.5" : "translate-x-0"
-                  }`}
-                />
-              </button>
-            </div>
-            <label
-              className="text-sm leading-6 text-gray-600"
-              id="switch-1-label"
-            >
-              By selecting this, you agree to our{" "}
-              <a href="#" className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </a>
-              .
-            </label>
           </div>
         </div>
 
@@ -218,7 +173,7 @@ const ContactForm = () => {
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Let&apos;s talk
+            Submit
           </button>
         </div>
       </form>
