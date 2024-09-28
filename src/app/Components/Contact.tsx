@@ -13,8 +13,8 @@ const ContactForm = () => {
     setIsLoading(true);
     emailjs
       .send(
-        "service_1u19ni8",
-        "template_n1e1ejf",
+        "service_lfz8eyn",
+        "template_opb420n",
         {
           from_name: `${first} ${second}`,
           message: message,
