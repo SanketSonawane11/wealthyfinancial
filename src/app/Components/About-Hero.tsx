@@ -3,8 +3,8 @@
 import NumberTicker from "./ui/NumberTick";
 
 const stats = [
-  { name: "Funds managed", value: "10" },
-  { name: "Clients", value: "200+" },
+  { name: "Funds managed", value: 10 },
+  { name: "Clients", value: 200 },
 ];
 
 export default function AboutHero() {
@@ -17,7 +17,7 @@ export default function AboutHero() {
               {stat.name}
             </dt>
             <dd className="text-[1.5rem] text-center font-bold leading-9 tracking-tight text-blue-500">
-              {stat.value == "10" ? (
+              {stat.value == 10 ? (
                 <span>
                   <NumberTicker value={stat.value} />
                   Cr+ and growing

@@ -12,7 +12,7 @@ export default function NumberTicker({
   className,
   decimalPlaces = 0,
 }: {
-  value: number | any;
+  value: number;
   direction?: "up" | "down";
   className?: string;
   delay?: number; // delay in s
@@ -27,10 +27,11 @@ export default function NumberTicker({
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   useEffect(() => {
-    isInView &&
+    if (isInView) {
       setTimeout(() => {
         motionValue.set(direction === "down" ? 0 : value);
       }, delay * 1000);
+    }
   }, [motionValue, isInView, delay, value, direction]);
 
   useEffect(
