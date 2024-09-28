@@ -6,6 +6,7 @@ import { WhyUs } from "./Components/WhyUs";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import MoreAbout from "./Components/MoreAbout";
+import ContactForm from "./Components/Contact";
 
 function page() {
   return (
@@ -17,6 +18,7 @@ function page() {
         <Services />
         <MoreAbout />
         <WhyUs />
+        <ContactForm />
       </div>
       <Footer />
     </div>

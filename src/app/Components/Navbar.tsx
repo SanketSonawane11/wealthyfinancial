@@ -9,7 +9,7 @@ export function Navbar() {
     },
     {
       name: "About Us",
-      link: "/About",
+      link: "#About",
     },
     {
       name: "Services",
@@ -17,7 +17,7 @@ export function Navbar() {
     },
     {
       name: "Contact Us",
-      link: "/Contact",
+      link: "#Contact",
     },
   ];
   return (
