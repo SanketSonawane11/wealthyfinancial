@@ -72,12 +72,6 @@ const cardsData = [
     ),
   },
 ];
-const props = {
-  className: "team-stack",
-  cards: cardsData,
-  offset: 20, // Adjust as needed
-  scaleFactor: 1.1, // Adjust as needed
-};
 const timelineData = [
   {
     title: "Project Kickoff",
