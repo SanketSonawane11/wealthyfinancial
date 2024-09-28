@@ -56,10 +56,10 @@ export default function Page() {
     <div>
       <Navbar />
       <div className="my-20 ">
+        {/* <BusinessSection /> */}
         <div className="mb-10 w-full">
           <AboutHero />
         </div>
-        <BusinessSection />
         {/* <Timeline data={timelineData} /> */}
         <OurTeam />
         <ToolsAndIdeasSection />

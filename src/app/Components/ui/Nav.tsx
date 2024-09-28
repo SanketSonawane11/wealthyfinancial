@@ -74,7 +74,7 @@ export const FloatingNav = ({
           </div>
           <div className="hidden md:flex text-[1.1rem] items-center justify-center gap-5">
             <button className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm">
-              Start Your Journey
+              Call Now
             </button>
           </div>
           <div className="text-[2rem] md:hidden">

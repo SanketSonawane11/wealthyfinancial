@@ -5,14 +5,9 @@ import { Card } from "./Card";
 function Services() {
   const services = [
     {
-      title: "PMS in Equity",
+      title: "Account Handling in Equity",
       content:
         "Tailored portfolio management services to maximize returns on your equity investments. Our strategies are designed with personalized goals and risk profiles in mind.",
-    },
-    {
-      title: "PMS in Forex",
-      content:
-        "Expert guidance in managing foreign exchange portfolios, helping you navigate the global markets with confidence.",
     },
     {
       title: "Fund Handling",
@@ -20,7 +15,12 @@ function Services() {
         "Secure and efficient fund management services to streamline the complexities of managing diverse portfolios.",
     },
     {
-      title: "Mutual Funds",
+      title: "Account Handling in Forex",
+      content:
+        "Expert guidance in managing foreign exchange portfolios, helping you navigate the global markets with confidence.",
+    },
+    {
+      title: "Mutual Fund",
       content:
         "Simplifying mutual fund investments, helping you choose the right funds to grow your wealth with minimal risk.",
     },

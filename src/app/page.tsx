@@ -8,7 +8,7 @@ import { Reviews } from "./Components/Reviews";
 
 function page() {
   return (
-    <div className="w-full flex items-center justify-center flex-col h-fit ">
+    <div className="w-full flex items-center bg-[#ecf7fc] justify-center flex-col h-fit ">
       <Navbar />
       <Hero />
       <Services />

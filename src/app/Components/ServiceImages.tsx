@@ -9,7 +9,7 @@ export function ServiceImage({
 }) {
   const imageUrl = image;
   return (
-    <div className="h-[20rem] relative flex items-center justify-center">
+    <div id="Services" className="h-[20rem] relative flex items-center justify-center">
       <DirectionAwareHover imageUrl={imageUrl}>
         <p className="font-bold text-xl">{title}</p>
       </DirectionAwareHover>
