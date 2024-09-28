@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Loader from "./Loader";
+
 const ContactForm = () => {
   const [first, setfirst] = useState("");
   const [second, setSecond] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setmessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -17,10 +19,12 @@ const ContactForm = () => {
         "template_opb420n",
         {
           from_name: `${first} ${second}`,
+          phone_no: phone,
+          email_id: email,
           message: message,
         },
         {
-          publicKey: "aYjV08S7J0xxGQbM_",
+          publicKey: "5jY-RiUT5lc5UBYH7",
         }
       )
       .then(() => {

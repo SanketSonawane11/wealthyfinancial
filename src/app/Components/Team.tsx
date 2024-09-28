@@ -1,6 +1,4 @@
 "use client";
-// import React from "react";
-// import { SiGmail } from "react-icons/si";
 import { Heading } from "./BlurHeading";
 
 interface SocialLinks {
@@ -73,8 +71,8 @@ const OurTeam: React.FC = () => {
             <div className="sm:w-1/3">
               <img
                 className="w-full h-full object-cover"
-                src="/images/logo.png"
-                alt={`Ankit Sharad Raut's profile`}
+                src="/images/IMG-20240618-WA0000.jpg"
+                alt="Ankit Sharad Raut"
               />
             </div>
 
