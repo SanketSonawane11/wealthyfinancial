@@ -27,7 +27,10 @@ function Services() {
   ];
 
   return (
-    <div className="mt-[5rem] w-[95%] md:w-[95%] flex items-center justify-center flex-col">
+    <div
+      id="Services"
+      className="mt-[5rem] w-[95%] md:w-[95%] flex items-center justify-center flex-col"
+    >
       <Heading heading="Our Services." />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {services.map((ele, i) => {

@@ -1,4 +1,3 @@
-// import { Button } from "@/components/ui/button";
 import BoxReveal from "./ui/reveal";
 
 export async function WhyUs() {
@@ -9,13 +8,6 @@ export async function WhyUs() {
           Why Wealthy Financial Services?
           <span className="text-[#eab308]">.</span>
         </p>
-      </BoxReveal>
-
-      <BoxReveal boxColor={"#eab308"} duration={0.5}>
-        <h2 className="mt-[.5rem] text-[1.5rem] md:text-[2rem]">
-          UI library for{" "}
-          <span className="text-[#eab308]">Design Engineers</span>
-        </h2>
       </BoxReveal>
 
       <BoxReveal boxColor={"#eab308"} duration={0.5}>

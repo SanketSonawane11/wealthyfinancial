@@ -8,12 +8,12 @@ export function Navbar() {
       link: "/",
     },
     {
-      name: "Services",
-      link: "Services",
-    },
-    {
       name: "About Us",
       link: "/About",
+    },
+    {
+      name: "Services",
+      link: "#Services",
     },
     {
       name: "Contact Us",
