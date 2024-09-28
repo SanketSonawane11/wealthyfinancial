@@ -13,7 +13,7 @@ function page() {
     <div className="w-full flex items-center bg-[#ecf7fc] justify-center flex-col h-fit ">
       <Navbar />
       <Hero />
-      <div className="md:p-[2rem] flex items-center justify-center flex-col">
+      <div className="md:p-[5rem] flex items-center justify-center flex-col">
         <About />
         <Services />
         <MoreAbout />

@@ -14,11 +14,11 @@ export function Card({
     <div className="max-w-xs my-[2rem] w-full">
       <div
         className={cn(
-          "cursor-pointer rounded-xl h-fit px-[0rem] py-[0rem] md:h-[28rem] overflow-hidden relative card shadow-xl max-w-sm mx-auto bg-white flex flex-col"
+          "cursor-pointer rounded-xl h-fit px-[0rem] py-[0rem] md:min-w-[17rem] md:h-[28rem] overflow-hidden relative card shadow-xl max-w-sm mx-auto bg-white flex flex-col"
         )}
       >
         {/* Image at the top */}
-        <div className="min-h-[50%] rounded-lg w-full overflow-hidden">
+        <div className="min-h-[50%] max-h-[50%] rounded-lg w-full overflow-hidden">
           <img
             src={image}
             alt={title}
@@ -28,7 +28,7 @@ export function Card({
 
         {/* Content area */}
         <div className="p-4">
-          <h1 className="font-bold md:min-h-[3.9rem] text-xl md:text-2xl text-gray-900 mb-2">
+          <h1 className="font-bold md:min-h-[2rem] text-xl md:text-2xl text-gray-900 mb-2">
             {title}
           </h1>
           <hr />
