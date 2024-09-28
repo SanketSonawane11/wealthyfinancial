@@ -7,71 +7,6 @@ import OurTeam from "../Components/Team";
 import ToolsAndIdeasSection from "../Components/AboutCta";
 import BusinessSection from "../Components/Mission";
 
-const cardsData = [
-  {
-    id: 1,
-    name: "John Doe",
-    designation: "CEO",
-    content: (
-      <div>
-        <p>
-          John is the visionary leader of the company, driving growth and
-          innovation.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    designation: "CTO",
-    content: (
-      <div>
-        <p>
-          Jane oversees the technological advancements and product development.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 3,
-    name: "Alice Johnson",
-    designation: "CFO",
-    content: (
-      <div>
-        <p>
-          Alice manages the financial strategy and oversees the budgeting
-          process.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 4,
-    name: "Bob Brown",
-    designation: "CMO",
-    content: (
-      <div>
-        <p>
-          Bob leads marketing efforts and drives brand awareness strategies.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 5,
-    name: "Emily Davis",
-    designation: "Product Manager",
-    content: (
-      <div>
-        <p>
-          Emily coordinates product launches and ensures alignment with market
-          needs.
-        </p>
-      </div>
-    ),
-  },
-];
 const timelineData = [
   {
     title: "Project Kickoff",
@@ -129,7 +64,6 @@ export default function Page() {
         <OurTeam />
         <ToolsAndIdeasSection />
       </div>
-
       <Footer />
     </div>
   );
