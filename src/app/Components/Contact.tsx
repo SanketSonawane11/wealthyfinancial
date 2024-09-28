@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { tr } from "framer-motion/client";
 import Loader from "./Loader";
 const ContactForm = () => {
   const [agreed, setAgreed] = useState(false);
