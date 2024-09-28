@@ -32,6 +32,7 @@ const ContactForm = () => {
         setfirst("");
         setSecond("");
         setEmail("");
+        setPhone("");
         setmessage("");
         setIsLoading(false);
       });
