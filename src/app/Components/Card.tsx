@@ -1,6 +1,5 @@
 "use client";
 import { cn } from "@/lib/utils";
-// import Link from "next/link";
 
 export function Card({
   image,
@@ -12,23 +11,6 @@ export function Card({
   content: string;
 }) {
   return (
-    // <div className="max-w-xs my-[2rem] w-full group/card">
-    //   <div
-    //     className={cn(
-    //       "cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl max-w-sm mx-auto backgroundImage flex flex-col justify-end p-4"
-    //     )}
-    //   >
-    //     <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
-    //     <div className="text content">
-    //       <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-    //         {title}
-    //       </h1>
-    //       <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
-    //         {content}
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="max-w-xs my-[2rem] w-full">
       <div
         className={cn(
@@ -60,20 +42,4 @@ export function Card({
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="w-[90%] md:w-[17rem] rounded-xl mx-auto bg-white shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-out">
-  <img
-    className="w-full h-48 object-cover"
-    src="/image/one.jpg"
-    alt="Service"
-  />
-  <div className="p-6">
-
-    <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-
-    <p className="text-gray-600 text-base leading-relaxed">{content}</p>
-  </div>
-</div>; */
 }
