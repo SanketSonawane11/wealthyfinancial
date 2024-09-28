@@ -54,25 +54,12 @@ const Footer = () => {
             </h2>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/wealthy-financial-services/"
                 aria-label="LinkedIn"
+                target="_blank"
                 className="text-gray-400 hover:text-blue-500"
               >
                 <FaLinkedin size={24} />
-              </a>
-              <a
-                href="https://www.twitter.com"
-                aria-label="Twitter"
-                className="text-gray-400 hover:text-blue-500"
-              >
-                <FaTwitter size={24} />
-              </a>
-              <a
-                href="https://www.facebook.com"
-                aria-label="Facebook"
-                className="text-gray-400 hover:text-blue-500"
-              >
-                <FaFacebook size={24} />
               </a>
             </div>
           </div>
@@ -83,24 +70,26 @@ const Footer = () => {
               Contact Information
             </h2>
             <address className="not-italic text-gray-400">
-              Address
+              207, Second Floor,
               <br />
-              Ithe yeil
+              The Edge, Behind Prakash Talkies
+              <br />
+              Palghar(W) - 401404
               <br />
               Phone:{" "}
               <a
-                href="tel:+11234567890"
+                href="tel:+918169307733"
                 className="hover:text-blue-500 transition-colors"
               >
-                123456
+                8169307733
               </a>
               <br />
               Email:{" "}
               <a
-                href="mailto:info@fin-growth.com"
+                href="mailto:ankit@wealthyfinancial.in"
                 className="hover:text-blue-500 transition-colors"
               >
-                sanketsonawane424@gmail.com
+                ankit@wealthyfinancial.in
               </a>
             </address>
           </div>
