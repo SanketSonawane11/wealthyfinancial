@@ -15,14 +15,6 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-  // {
-  //   name: "Ankit Raut",
-  //   role: "Founder",
-  //   image: "path/to/image1.jpg",
-  //   socialLinks: {
-  //     Email: "ankit@wealthyfinancial.in",
-  //   },
-  // },
   {
     name: "Nitin Sarode",
     role: "Operation Head & Trader",

@@ -6,9 +6,9 @@ import OurTeam from "./Team";
 function MoreAbout() {
   return (
     <div className="w-full flex items-center justify-center flex-col">
+      <OurTeam />
       <Heading heading="Let's Talk Numbers" />
       <AboutHero />
-      <OurTeam />
     </div>
   );
 }
