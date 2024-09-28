@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Loader from "./Loader";
 const ContactForm = () => {
-  const [agreed, setAgreed] = useState(false);
   const [first, setfirst] = useState("");
   const [second, setSecond] = useState("");
   const [email, setEmail] = useState("");
   const [message, setmessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     emailjs
