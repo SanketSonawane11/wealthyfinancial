@@ -5,7 +5,7 @@ import AboutHero from "../Components/About-Hero";
 // import Timeline from "../Components/Timeline";
 import OurTeam from "../Components/Team";
 import ToolsAndIdeasSection from "../Components/AboutCta";
-import BusinessSection from "../Components/Mission";
+// import BusinessSection from "../Components/Mission";
 
 // const timelineData = [
 //   {

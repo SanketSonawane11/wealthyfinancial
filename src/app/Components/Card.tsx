@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+// import Link from "next/link";
 
 export function Card({ title, content }: { title: string; content: string }) {
   return (
