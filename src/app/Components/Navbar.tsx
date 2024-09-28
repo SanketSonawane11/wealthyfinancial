@@ -13,11 +13,11 @@ export function Navbar() {
     },
     {
       name: "About Us",
-      link: "/",
+      link: "/About",
     },
     {
       name: "Contact Us",
-      link: "/",
+      link: "/Contact",
     },
   ];
   return (
