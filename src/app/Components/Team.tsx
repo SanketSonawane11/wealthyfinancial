@@ -40,11 +40,11 @@ const teamMembers: TeamMember[] = [
 ];
 
 interface TeamMemberCardProps {
-  member: TeamMember;
+  member: TeamMember
 }
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => (
-  <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 transition-transform duration-200 hover:shadow-lg hover:scale-105">
+  <div className="bg-white border rounded-xl border-gray-200 shadow-md p-4 transition-transform duration-200 hover:shadow-lg hover:scale-105">
     <h5 className="text-xl font-bold text-gray-900">{member.name}</h5>
     <p className="text-gray-500">{member.role}</p>
     <div className="flex space-x-3 mt-4">
@@ -66,7 +66,7 @@ const OurTeam: React.FC = () => {
       </p>
       <div className="bg-blue-100 rounded-xl py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="flex items-center flex-col justify-evenly gap-5">
-          <div className="max-w-xl mx-auto rounded-xl bg-white shadow-lg overflow-hidden flex flex-col justify-evenly sm:flex-row transform hover:scale-105 transition-transform duration-300 ease-out">
+          <div className="max-w-[90%] mx-auto rounded-xl bg-white shadow-lg overflow-hidden flex flex-col justify-evenly sm:flex-row transform hover:scale-105 transition-transform duration-300 ease-out">
             {/* Left Side: Image */}
             <div className="sm:w-1/3">
               <img
