@@ -176,13 +176,15 @@ export const FloatingNav = ({
               ))}
             </div>
             <div className="hidden lg:flex text-[1.1rem] items-center justify-center gap-5">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
-              >
-                Call Now
-              </motion.button>
+              <Link href="#Contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
+                >
+                  Call Now
+                </motion.button>
+              </Link>
             </div>
             <div
               className="text-[2rem] lg:hidden cursor-pointer"

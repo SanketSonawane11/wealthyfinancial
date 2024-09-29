@@ -36,7 +36,7 @@ export async function WhyUs() {
   ];
 
   return (
-    <div className="h-full w-[95%] md:w-[full] my-[2rem] items-center justify-center overflow-hidden pt-8">
+    <div className="h-full flex flex-col w-[95%] md:w-[full] my-[2rem] items-center justify-center overflow-hidden pt-8">
       <BoxReveal boxColor={"#eab308"} duration={0.5}>
         <Heading heading="Why Wealthy Financial Services?" />
       </BoxReveal>
