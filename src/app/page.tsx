@@ -19,7 +19,7 @@ function page() {
         <Services />
         <MoreAbout />
         <WhyUs />
-        <ToolsAndIdeasSection />
+        {/* <ToolsAndIdeasSection /> */}
         <ContactForm />
       </div>
       <Footer />

@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="About"
-      className="w-[90%] md:w-full bg-gradient-to-r from-white to-gray-50 py-16 relative overflow-hidden"
+      className="w-full bg-gradient-to-r from-white to-gray-50 py-16 relative overflow-hidden"
     >
       {/* Subtle Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gray-100 opacity-50 pointer-events-none"></div>
