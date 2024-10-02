@@ -176,7 +176,7 @@ const OurTeam: React.FC = () => {
             <div className="sm:w-[70%] md:w-[35rem]">
               <img
                 className="w-full h-full object-cover"
-                src="/images/founder.jpg"
+                src="/images/Founder.jpg"
                 alt="Ankit Sharad Raut"
               />
             </div>
