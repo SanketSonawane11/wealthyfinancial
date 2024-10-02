@@ -40,7 +40,7 @@ const teamMembers: TeamMember[] = [
 ];
 
 interface TeamMemberCardProps {
-  member: TeamMember
+  member: TeamMember;
 }
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => (
@@ -64,14 +64,14 @@ const OurTeam: React.FC = () => {
       <p className="font-light text-center mb-[3rem] text-gray-500 sm:text-xl dark:text-gray-400">
         Meet our team
       </p>
-      <div className="bg-blue-100 rounded-xl py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className=" rounded-xl py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="flex items-center flex-col justify-evenly gap-5">
-          <div className="max-w-[90%] mx-auto rounded-xl bg-white shadow-lg overflow-hidden flex flex-col justify-evenly sm:flex-row transform hover:scale-105 transition-transform duration-300 ease-out">
+          <div className="max-w-[90%] bg-white mx-auto rounded-xl overflow-hidden flex flex-col justify-evenly sm:flex-row transform hover:scale-105 transition-transform duration-300 ease-out">
             {/* Left Side: Image */}
             <div className="sm:w-1/3">
               <img
-                className="w-full h-full object-cover"
-                src="/images/IMG-20240618-WA0000.jpg"
+                className="w-[35rem] rounded-xl h-full object-cover"
+                src="/images/founder.jpg"
                 alt="Ankit Sharad Raut"
               />
             </div>

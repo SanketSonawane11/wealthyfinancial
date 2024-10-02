@@ -1,9 +1,10 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const ToolsAndIdeasSection = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="dark:bg-gray-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
           className="w-full rounded-xl"
@@ -26,8 +27,8 @@ const ToolsAndIdeasSection = () => {
             Get in touch today to discover how we can help you take control of
             your financial future.
           </p>
-          <a
-            href="#"
+          <Link
+            href="#Contact"
             className="inline-flex bg-yellow-600 transition-all ease-out duration-150 hover:rounded-xl items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
           >
             Get started
@@ -43,7 +44,7 @@ const ToolsAndIdeasSection = () => {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

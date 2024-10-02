@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import About from "./Components/About";
 import MoreAbout from "./Components/MoreAbout";
 import ContactForm from "./Components/Contact";
+import ToolsAndIdeasSection from "./Components/AboutCta";
 
 function page() {
   return (
@@ -18,6 +19,7 @@ function page() {
         <Services />
         <MoreAbout />
         <WhyUs />
+        <ToolsAndIdeasSection />
         <ContactForm />
       </div>
       <Footer />

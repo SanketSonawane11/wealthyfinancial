@@ -223,7 +223,7 @@ export const FloatingNav = ({
               whileTap={{ scale: 0.95 }}
               className="mt-auto w-full rounded-lg py-3 px-5 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
             >
-              Call Now
+              <Link href="#Contact">Call Now</Link>
             </motion.button>
           </motion.div>
         )}
