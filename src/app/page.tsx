@@ -4,8 +4,8 @@ import { Hero } from "./Components/Hero";
 import Services from "./Components/Services";
 import { WhyUs } from "./Components/WhyUs";
 import Footer from "./Components/Footer";
-// import About from "./Components/About";
-import MoreAbout from "./Components/MoreAbout";
+import About from "./Components/About";
+// import MoreAbout from "./Components/MoreAbout";
 import ContactForm from "./Components/Contact";
 import ToolsAndIdeasSection from "./Components/AboutCta";
 
@@ -15,9 +15,9 @@ function page() {
       <Navbar />
       <Hero />
       <div className="md:p-[5rem] flex items-center justify-center flex-col">
-        {/* <About /> */}
+        <About />
         <Services />
-        <MoreAbout />
+        {/* <MoreAbout /> */}
         <WhyUs />
         <ToolsAndIdeasSection />
         <ContactForm />
