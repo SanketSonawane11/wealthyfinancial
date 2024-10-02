@@ -20,7 +20,7 @@ function page() {
         <MoreAbout />
         <WhyUs />
         <ToolsAndIdeasSection />
-        <ContactForm />
+        <ContactForm /> 
       </div>
       <Footer />
     </div>

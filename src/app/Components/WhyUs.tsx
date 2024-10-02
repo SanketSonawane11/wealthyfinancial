@@ -8,30 +8,30 @@ export async function WhyUs() {
       title: "Proven Results",
       content:
         "Our Company has a track record of profitable Account management.",
-      img: "/images/one.webp",
+      img: "/images/Results.jpg",
     },
     {
       title: "Secure & Transparent",
       content:
         "our money is safe in your Trading Account, and you stay informed.",
-      img: "/images/two.webp",
+      img: "/images/Secure.jpg",
     },
     {
       title: " Consistent Returns",
       content: "Reliable profits to grow your investment over the time.",
-      img: "/images/two.webp",
+      img: "/images/ConsistenRet.jpg",
     },
     {
       title: "Client-Centric Approach",
       content:
         "Your needs come first. We are here to listen, advise, and offer personalized solutions.",
-      img: "/images/two.webp",
+      img: "/images/Customer2.jpg",
     },
     {
       title: "Excellence",
       content:
         "We strive for excellence in everything we do, from the solutions we offer to the services we deliver.",
-      img: "/images/two.webp",
+      img: "/images/Excellence.jpg",
     },
   ];
 

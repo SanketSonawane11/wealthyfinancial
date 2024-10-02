@@ -8,25 +8,25 @@ function Services() {
       title: "Account Handling in Equity",
       content:
         "Tailored portfolio management services to maximize returns on your equity investments. Our strategies are designed with personalized goals and risk profiles in mind.",
-      img: "/images/one.webp",
+      img: "/images/service1.jpg",
     },
     {
       title: "Fund Handling",
       content:
         "Secure and efficient fund management services to streamline the complexities of managing diverse portfolios.",
-      img: "/images/two.webp",
+      img: "/images/Extra2.jpg",
     },
     {
       title: "Account Handling in Forex",
       content:
         "Expert guidance in managing foreign exchange portfolios, helping you navigate the global markets with confidence.",
-      img: "/images/two.webp",
+      img: "/images/Service2.jpg",
     },
     {
       title: "Mutual Fund",
       content:
         "Simplifying mutual fund investments, helping you choose the right funds to grow your wealth with minimal risk.",
-      img: "/images/two.webp",
+      img: "/images/Extra.jpg",
     },
   ];
 
