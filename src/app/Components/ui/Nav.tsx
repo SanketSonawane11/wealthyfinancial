@@ -176,15 +176,14 @@ export const FloatingNav = ({
               ))}
             </div>
             <div className="hidden lg:flex text-[1.1rem] items-center justify-center gap-5">
-              <Link href="#Contact">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
-                >
-                  Call Now
-                </motion.button>
-              </Link>
+              <motion.a
+                href="tel:+917822980644"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
+              >
+                Call Now
+              </motion.a>
             </div>
             <div
               className="text-[2rem] lg:hidden cursor-pointer"
@@ -218,13 +217,14 @@ export const FloatingNav = ({
               </Link>
             ))}
             {/* Call Now Button for Mobile */}
-            <motion.button
+            <motion.a
+              href="tel:+917822980644"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-auto w-full rounded-lg py-3 px-5 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
+              className="rounded-lg py-2 px-3 font-semibold text-white bg-[#eab308] transition-all ease-out duration-150 hover:rounded-sm"
             >
-              <Link href="#Contact">Call Now</Link>
-            </motion.button>
+              Call Now
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
