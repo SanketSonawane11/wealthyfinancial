@@ -126,14 +126,14 @@ const teamMembers: TeamMember[] = [
       Email: "",
     },
   },
-  {
-    name: "Akshat Jain",
-    role: "Portfolio Manager & Business Acquisition",
-    image: "path/to/image2.jpg",
-    socialLinks: {
-      Email: "",
-    },
-  },
+  // {
+  //   name: "Akshat Jain",
+  //   role: "Portfolio Manager & Business Acquisition",
+  //   image: "path/to/image2.jpg",
+  //   socialLinks: {
+  //     Email: "",
+  //   },
+  // },
   {
     name: "Bhargav Patil",
     role: "Portfolio Manager & Business Acquisition",
@@ -195,7 +195,7 @@ const OurTeam: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
             {teamMembers.map((member) => (
               <TeamMemberCard key={member.name} member={member} />
             ))}
