@@ -32,12 +32,12 @@ function About() {
             long-term capital growth, we combine innovative financial solutions
             with disciplined, research-driven trading strategies. Our
             experienced professionals are dedicated to providing world-class
-            service, ensuring each client feels informed, empowered, and in
+            service, ensuring each client feels informed, empowered and in
             control of their financial journey.
           </p>
           <p className="mt-8 text-[1.2rem] md:text-[1.3rem] font-light text-gray-600 leading-relaxed">
             We pride ourselves on building lasting relationships based on
-            transparency, trust, and performance-driven results. At{" "}
+            transparency, trust and performance-driven results. At{" "}
             <span className="font-semibold text-gray-900">
               Wealthy Financial Services
             </span>

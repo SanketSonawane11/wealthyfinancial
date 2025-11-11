@@ -27,12 +27,6 @@ export async function WhyUs() {
         "Your needs come first. We are here to listen, advise, and offer personalized solutions.",
       img: "/images/Customer2.jpg",
     },
-    {
-      title: "Excellence",
-      content:
-        "We strive for excellence in everything we do, from the solutions we offer to the services we deliver.",
-      img: "/images/Excellence.jpg",
-    },
   ];
 
   return (

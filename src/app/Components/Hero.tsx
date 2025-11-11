@@ -37,8 +37,8 @@ export function Hero() {
             Welcome to Wealthy Financial Services.
           </h1>
           <h3 className="text-blue-200 my-[1rem] w-[60%] text-[1rem] md:text-[1.5rem]">
-            We offer Professional Account Management, Fund Handling, Forex
-            Trading and Mutual Fund Expertise.
+            We offer professional investment solutions and advisory services to
+            grow your finances.
           </h3>
         </motion.p>
         <div className="flex items-center justify-center gap-[1rem] md:gap-[3rem] flex-col md:flex-row">

@@ -70,12 +70,6 @@ const Footer = () => {
               Contact Information
             </h2>
             <address className="not-italic text-gray-400">
-              207, Second Floor,
-              <br />
-              The Edge, Behind Prakash Talkies
-              <br />
-              Palghar(W) - 401404
-              <br />
               Phone:{" "}
               <a
                 href="tel:+918169307733"

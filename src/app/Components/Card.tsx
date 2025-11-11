@@ -11,18 +11,18 @@ export function Card({
   content: string;
 }) {
   return (
-    <div className="max-w-xs my-[2rem] w-full">
+    <div className="w-full my-8">
       <div
         className={cn(
-          "cursor-pointer rounded-xl h-fit px-[0rem] py-[0rem] md:min-w-[17rem] md:h-[28rem] overflow-hidden relative card shadow-xl max-w-sm mx-auto bg-white flex flex-col"
+          "cursor-pointer rounded-xl overflow-hidden relative card shadow-xl bg-white flex flex-col h-full w-full"
         )}
       >
         {/* Image at the top */}
-        <div className="min-h-[50%] max-h-[50%] rounded-lg w-full overflow-hidden">
+        <div className="w-full overflow-hidden rounded-t-lg">
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover/card:scale-110"
+            className="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 ease-in-out transform group-hover/card:scale-110"
           />
         </div>
 
