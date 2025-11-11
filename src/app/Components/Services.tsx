@@ -30,7 +30,7 @@ function Services() {
       className="mt-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center flex-col"
     >
       <Heading heading="Our Services." />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full auto-rows-fr items-stretch">
         {services.map((ele, i) => {
           return (
             <Card

@@ -1,4 +1,5 @@
 "use client";
+import NextImage from "next/image";
 import { cn } from "@/lib/utils";
 
 export function Card({
@@ -11,28 +12,30 @@ export function Card({
   content: string;
 }) {
   return (
-    <div className="w-full my-8">
+    <div className="w-full h-full">
       <div
         className={cn(
-          "cursor-pointer rounded-xl overflow-hidden relative card shadow-xl bg-white flex flex-col h-full w-full"
+          "cursor-pointer rounded-xl overflow-hidden relative card shadow-xl bg-white flex flex-col h-full w-full min-h-[20rem]"
         )}
       >
         {/* Image at the top */}
-        <div className="w-full overflow-hidden rounded-t-lg">
-          <img
+        <div className="relative w-full overflow-hidden rounded-t-lg flex-none h-48 sm:h-56 md:h-64">
+          <NextImage
             src={image}
             alt={title}
-            className="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 ease-in-out transform group-hover/card:scale-110"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            fill
+            className="object-cover transition-transform duration-300 ease-in-out transform group-hover/card:scale-110"
           />
         </div>
 
         {/* Content area */}
-        <div className="p-4">
+        <div className="p-4 flex-1 flex flex-col justify-between">
           <h1 className="font-bold md:min-h-[2rem] text-xl md:text-2xl text-gray-900 mb-2">
             {title}
           </h1>
           <hr />
-          <p className="font-medium mt-[1rem] text-sm text-gray-600">
+          <p className="font-medium mt-4 text-sm text-gray-600 flex-1">
             {content}
           </p>
         </div>

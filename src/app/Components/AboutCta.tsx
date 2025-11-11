@@ -1,16 +1,19 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import NextImage from "next/image";
 
 const ToolsAndIdeasSection = () => {
   return (
     <section className="dark:bg-gray-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img
+        <NextImage
           className="w-full rounded-xl"
-          // src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
           src="/images/joshua-mayo-MCIm2A6hLXs-unsplash.jpg"
           alt="dashboard image"
+          width={1200}
+          height={800}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         <div className="mt-4 md:mt-0">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">

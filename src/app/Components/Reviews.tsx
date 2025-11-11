@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import NextImage from "next/image";
 import Marquee from "./ui/Scrolling-Cards";
 import { Heading } from "./BlurHeading";
 
@@ -64,9 +65,9 @@ const ReviewCard = ({
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
+  <div className="flex flex-row items-center gap-2">
+  <NextImage className="rounded-full" width={32} height={32} alt="" src={img} unoptimized />
+  <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
           </figcaption>

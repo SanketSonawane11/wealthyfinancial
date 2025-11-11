@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5"; 
+import NextImage from "next/image";
 
 export const FloatingNav = ({
   navItems,
@@ -62,11 +63,13 @@ export const FloatingNav = ({
           )}
         >
           <div className="flex w-full text-black items-center justify-between">
-            <img
-              className="w-[11rem] md:w-[10rem] lg:w-[13rem] contain-content object-center"
-              src="/images/Logo.png"
-              alt="Logo"
-            />
+              <NextImage
+                src="/images/Logo.png"
+                alt="Logo"
+                width={192}
+                height={64}
+                className="object-contain w-28 sm:w-32 md:w-40 lg:w-48"
+              />
             <div className="hidden lg:flex relative -left-[4rem] text-black text-[1.4rem] items-center font-bold justify-center gap-8">
               {navItems.map((navItem, idx: number) => (
                 <Link
