@@ -77,14 +77,6 @@ const Footer = () => {
               >
                 7822980644
               </a>
-              <br />
-              Email:{" "}
-              <a
-                href="mailto:ankit@wealthyfinancial.in"
-                className="hover:text-blue-500 transition-colors"
-              >
-                ankit@wealthyfinancial.in
-              </a>
             </address>
           </div>
         </div>

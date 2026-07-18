@@ -5,8 +5,7 @@ import OurTeam from "./Team";
 
 function MoreAbout() {
   return (
-    <div className="w-full flex items-center justify-center flex-col">
-      <OurTeam />
+    <div className="w-full my-[5rem] flex items-center justify-center flex-col">
       <Heading heading="Let's Talk Numbers" />
       <AboutHero />
     </div>
