@@ -1,7 +1,6 @@
 import React from "react";
 import { Heading } from "./BlurHeading";
 import AboutHero from "./About-Hero";
-import OurTeam from "./Team";
 
 function MoreAbout() {
   return (
